@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"> 
+<html>
+<head>
+	<title>Reuben</title>
+</head>
+<body>
+<div style="text-align:center">
+<a href="abbydnd.html">Back to mainpage</a>
+<h1>Reuben</h1>
+<h2>Current Level: 5</h2>
+<h3><a href="paladin.html#oathofconquest">Oath of Conquest</a></h3>
+<h3>Fighting Style: <a href="paladin.html#defense">Defensive</a></h3>
+<h2>Prepared Spells</h2>
+<p>Number of Spells I can have prepared is <strong>5</strong> (Charisma mod + half of your current level)</p>
+<table style="margin:0px auto;">
+	<tr>
+		<th>Level 1 Spells</th>
+		<th>Level 2 Spells</th>
+		<th>Oath of Conquest Spells</th>
+	</tr>
+	<tr>
+		<!-- Level 1 Spells -->
+		<td>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</td>
+		<!-- Level 2 Spells -->
+		<td>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</td>
+		<!-- Oath of Conquest Spells -->
+		<td>
+			<ul>
+				<li>Armor of Agathys</li>
+				<li>Command</li>
+				<li>Hold person</li>
+				<li>Spiritual weapon</li>
+			</ul>
+		</td>
+	</tr>
+</table>
+</div>
+<div style="text-align:center"> <!-- Spell slot div-->
+	<h2>Spell Slots:</h2>
+	<table style="margin:0px auto;">
+		<tr>
+			<th>Level Spell Slot</th>
+			<th>Have</th>
+			<th>Used</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>4</td>
+			<!-- Level 1 Spell Used-->
+			<td><button type="button" onclick="level1spellminus()">-</button> <span id = "level1spellused">0</span> <button type="button" onclick="level1spellplus()">+</button></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>2</td>
+			<!-- Level 2 Spell Used-->
+			<td><button type="button" onclick="level2spellminus()">-</button> <span id = "level2spellused">0</span> <button type="button" onclick="level2spellplus()">+</button></td>
+		</tr>
+	</table>
+</div>
+<div style="margin:0px auto; display: table;">
+	<div style="display:table-row;">
+		<div style="display: table-cell; ">
+		</div>
+		<div style="display: table-cell;">
+		</div>
+	</div>
+</div>
+<div style="text-align:center">
+<h2>Reuben's Diary</h2>
+</div>
+</body>
+<script>
+if (localStorage.getItem("level1spellslotreuben") === null){
+		localStorage.setItem("level1spellslotreuben", 0);
+}
+else{
+	document.getElementById("level1spellused").innerHTML = localStorage.getItem("level1spellslotreuben")
+}
+if (localStorage.getItem("level2spellslotreuben") === null){
+		localStorage.setItem("level2spellslotreuben", 0);
+}
+else{
+	document.getElementById("level2spellused").innerHTML = localStorage.getItem("level2spellslotreuben")
+}
+localStorage.removeItem("level3spellslotreuben")
+function level1spellminus(){
+	slot = parseInt(localStorage.getItem("level1spellslotreuben"));
+	newSlot = slot - 1
+	document.getElementById("level1spellused").innerHTML = newSlot
+	localStorage.setItem("level1spellslotreuben", newSlot);
+}
+
+function level2spellminus(){
+	slot = parseInt(localStorage.getItem("level2spellslotreuben"));
+	newSlot = slot - 1
+	document.getElementById("level2spellused").innerHTML = newSlot
+	localStorage.setItem("level2spellslotreuben", newSlot);
+}
+
+function level1spellplus(){
+	slot = parseInt(localStorage.getItem("level1spellslotreuben"));
+	newSlot = slot + 1
+	document.getElementById("level1spellused").innerHTML = newSlot
+	localStorage.setItem("level1spellslotreuben", newSlot);
+}
+
+function level2spellplus(){
+	slot = parseInt(localStorage.getItem("level2spellslotreuben"));
+	newSlot = slot + 1
+	document.getElementById("level2spellused").innerHTML = newSlot
+	localStorage.setItem("level2spellslotreuben", newSlot);
+}
+</script>
+</html> 

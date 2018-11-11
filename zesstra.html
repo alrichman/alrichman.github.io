@@ -122,64 +122,64 @@
 </div>
 </body>
 <script>
-if (localStorage.getItem("level1spellslot") === null){
-		localStorage.setItem("level1spellslot", 0);
+if (localStorage.getItem("level1spellslotzesstra") === null){
+		localStorage.setItem("level1spellslotzesstra", 0);
 }
 else{
-	document.getElementById("level1spellused").innerHTML = localStorage.getItem("level1spellslot")
+	document.getElementById("level1spellused").innerHTML = localStorage.getItem("level1spellslotzesstra")
 }
-if (localStorage.getItem("level2spellslot") === null){
-		localStorage.setItem("level2spellslot", 0);
-}
-else{
-	document.getElementById("level2spellused").innerHTML = localStorage.getItem("level2spellslot")
-}
-if (localStorage.getItem("level3spellslot") === null){
-	localStorage.setItem("level3spellslot", 0);
+if (localStorage.getItem("level2spellslotzesstra") === null){
+		localStorage.setItem("level2spellslotzesstra", 0);
 }
 else{
-	document.getElementById("level3spellused").innerHTML = localStorage.getItem("level3spellslot")
+	document.getElementById("level2spellused").innerHTML = localStorage.getItem("level2spellslotzesstra")
+}
+if (localStorage.getItem("level3spellslotzesstra") === null){
+	localStorage.setItem("level3spellslotzesstra", 0);
+}
+else{
+	document.getElementById("level3spellused").innerHTML = localStorage.getItem("level3spellslotzesstra")
 }
 function level1spellminus(){
-	slot = parseInt(localStorage.getItem("level1spellslot"));
+	slot = parseInt(localStorage.getItem("level1spellslotzesstra"));
 	newSlot = slot - 1
 	document.getElementById("level1spellused").innerHTML = newSlot
-	localStorage.setItem("level1spellslot", newSlot);
+	localStorage.setItem("level1spellslotzesstra", newSlot);
 }
 
 function level2spellminus(){
-	slot = parseInt(localStorage.getItem("level2spellslot"));
+	slot = parseInt(localStorage.getItem("level2spellslotzesstra"));
 	newSlot = slot - 1
 	document.getElementById("level2spellused").innerHTML = newSlot
-	localStorage.setItem("level2spellslot", newSlot);
+	localStorage.setItem("level2spellslotzesstra", newSlot);
 }
 
 function level3spellminus(){
-	slot = parseInt(localStorage.getItem("level3spellslot"));
+	slot = parseInt(localStorage.getItem("level3spellslotzesstra"));
 	newSlot = slot - 1
 	document.getElementById("level3spellused").innerHTML = newSlot
-	localStorage.setItem("level3spellslot", newSlot);
+	localStorage.setItem("level3spellslotzesstra", newSlot);
 }
 
 function level1spellplus(){
-	slot = parseInt(localStorage.getItem("level1spellslot"));
+	slot = parseInt(localStorage.getItem("level1spellslotzesstra"));
 	newSlot = slot + 1
 	document.getElementById("level1spellused").innerHTML = newSlot
-	localStorage.setItem("level1spellslot", newSlot);
+	localStorage.setItem("level1spellslotzesstra", newSlot);
 }
 
 function level2spellplus(){
-	slot = parseInt(localStorage.getItem("level2spellslot"));
+	slot = parseInt(localStorage.getItem("level2spellslotzesstra"));
 	newSlot = slot + 1
 	document.getElementById("level2spellused").innerHTML = newSlot
-	localStorage.setItem("level2spellslot", newSlot);
+	localStorage.setItem("level2spellslotzesstra", newSlot);
 }
 
 function level3spellplus(){
-	slot = parseInt(localStorage.getItem("level3spellslot"));
+	slot = parseInt(localStorage.getItem("level3spellslotzesstra"));
 	newSlot = slot + 1
 	document.getElementById("level3spellused").innerHTML = newSlot
-	localStorage.setItem("level3spellslot", newSlot);
+	localStorage.setItem("level3spellslotzesstra", newSlot);
 }
 </script>
 </html> 
