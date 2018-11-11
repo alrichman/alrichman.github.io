@@ -2,10 +2,13 @@
 <meta charset="UTF-8">
 <html>
 <head>
+	<title>Druid</title>
 	<link rel="stylesheet" href="dnd.css">
+	<script>localStorage.setItem("currentFolder", "Classes")</script>
 </head>
 <body>
-<a href="abbydnd.html">Back to mainpage</a>
+<div id="topmenu" class="navbar"></div>
+<div id="wholepage">
 <h1>Druid</h1>
 
 <h2>Druid Spells</h2>
@@ -133,8 +136,13 @@
 	<li>Starting at 6th level, you can transform into a beast with a challenge rating as high as your druid level divided by 3, rounded down.</li>
 </ul>
 </div>
+</div>
 </body>
+<script src="../Styling/setupmenu.js"></script>
+<link rel="stylesheet" href="../Styling/menu.css">
+<link rel="stylesheet" href="../Styling/dnd.css">
 <script>
+localStorage.setItem("currentFolder", "Classes")
 document.getElementById("showdescription").style.display="none"
 function closeShowDescription(){
 	document.getElementById("showdescription").style.display="none"

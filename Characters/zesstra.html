@@ -3,13 +3,14 @@
 <html>
 <head>
 	<title>Zesstra</title>
+	<script>localStorage.setItem("currentFolder", "Characters")</script>
 </head>
 <body>
+<div id="topmenu" class="navbar"></div>
 <div style="text-align:center">
-<a href="abbydnd.html">Back to mainpage</a>
 <h1>Zesstra</h1>
 <h2>Current Level Druid: 5</h2>
-<h3><a href="druid.html#circleofthemoon">Circle of the Moon</a></h3>
+<h3><a href="../Classes/druid.html#circleofthemoon">Circle of the Moon</a></h3>
 
 <h2>Prepared Spells</h2>
 <p>Number of Spells I can have prepared is <strong>7</strong> (wisdom mod + level)</p>
@@ -121,6 +122,9 @@
 </ul>
 </div>
 </body>
+<script src="../Styling/setupmenu.js"></script>
+<link rel="stylesheet" href="../Styling/menu.css">
+<link rel="stylesheet" href="../Styling/dnd.css">
 <script>
 if (localStorage.getItem("level1spellslotzesstra") === null){
 		localStorage.setItem("level1spellslotzesstra", 0);

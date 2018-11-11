@@ -3,14 +3,15 @@
 <html>
 <head>
 	<title>Reuben</title>
+	<script>localStorage.setItem("currentFolder", "Characters")</script>
 </head>
 <body>
+<div id="topmenu" class="navbar"></div>
 <div style="text-align:center">
-<a href="abbydnd.html">Back to mainpage</a>
 <h1>Reuben</h1>
 <h2>Current Level: 5</h2>
-<h3><a href="paladin.html#oathofconquest">Oath of Conquest</a></h3>
-<h3>Fighting Style: <a href="paladin.html#defense">Defensive</a></h3>
+<h3><a href="../Classes/paladin.html#oathofconquest">Oath of Conquest</a></h3>
+<h3>Fighting Style: <a href="../Classes/paladin.html#defense">Defensive</a></h3>
 <h2>Prepared Spells</h2>
 <p>Number of Spells I can have prepared is <strong>5</strong> (Charisma mod + half of your current level)</p>
 <table style="margin:0px auto;">
@@ -82,6 +83,9 @@
 <h2>Reuben's Diary</h2>
 </div>
 </body>
+<script src="../Styling/setupmenu.js"></script>
+<link rel="stylesheet" href="../Styling/menu.css">
+<link rel="stylesheet" href="../Styling/dnd.css">
 <script>
 if (localStorage.getItem("level1spellslotreuben") === null){
 		localStorage.setItem("level1spellslotreuben", 0);
