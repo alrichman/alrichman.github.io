@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"> 
+<html>
+<head>
+	<title>Zesstra</title>
+</head>
+<body>
+<div style="text-align:center">
+<a href="abbydnd.html">Back to mainpage</a>
+<h1>Zesstra</h1>
+<h2>Current Level Druid: 5</h2>
+<h3><a href="druid.html#circleofthemoon">Circle of the Moon</a></h3>
+
+<h2>Prepared Spells</h2>
+<p>Number of Spells I can have prepared is <strong>7</strong> (wisdom mod + level)</p>
+<table style="margin:0px auto;">
+	<tr>
+		<th>Cantrips</th>
+		<th>Level 1 Spells</th>
+		<th>Level 2 Spells</th>
+		<th>Level 3 Spells</th>
+	</tr>
+	<tr>
+		<!-- Cantrips -->
+		<td>
+			<ul>
+				<li>Infestation</li>
+				<li>Mending</li>
+				<li>Produce Flame</li>
+			</ul>
+		</td>
+		<!-- Level 1 Spells -->
+		<td>
+			<ul>
+				<li>Entangle</li>
+				<li>Ice Knight</li>
+				<li>Thunderwave</li>
+			</ul>
+		</td>
+		<!-- Level 2 Spells -->
+		<td>
+			<ul>
+				<li>Flame Blade</li>
+				<li>Flame Sphere</li>
+				<li>Pass w/o Trace</li>
+			</ul>
+		</td>
+		<!-- Level 3 Spells -->
+		<td>
+			<ul>
+			</ul>
+		</td>
+	</tr>
+</table>
+</div>
+<div style="text-align:center"> <!-- Spell slot div-->
+	<h2>Spell Slots:</h2>
+	<table style="margin:0px auto;">
+		<tr>
+			<th>Level Spell Slot</th>
+			<th>Have</th>
+			<th>Used</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>4</td>
+			<!-- Level 1 Spell Used-->
+			<td><button type="button" onclick="level1spellminus()">-</button> <span id = "level1spellused">0</span> <button type="button" onclick="level1spellplus()">+</button></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>3</td>
+			<!-- Level 2 Spell Used-->
+			<td><button type="button" onclick="level2spellminus()">-</button> <span id = "level2spellused">0</span> <button type="button" onclick="level2spellplus()">+</button></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>2</td>
+			<!-- Level 3 Spell Used-->
+			<td><button type="button" onclick="level3spellminus()">-</button> <span id = "level3spellused">0</span> <button type="button" onclick="level3spellplus()">+</button></td>
+		</tr>
+	</table>
+</div>
+<div style="margin:0px auto; display: table;"> <!--Ritual Spells and Wild Shapes div -->
+	<div style="display:table-row;">
+		<div style="display: table-cell; ">
+		<h2>Ritual Spells</h2><p>Can use a ritual (one hour) to case</p>
+		<ul>
+			<li>Detect Magic</li>
+			<li>Detect Posion and disease</li>
+			<li>Purify food and drink</li>
+			<li>Speak w/ animals</li>
+			<li>Animal messenger</li>
+			<li>Beast sense</li>
+			<li>Locate animals or Plants</li>
+			<li>Skywrite</li>
+		</ul>
+		</div>
+		<div style="display: table-cell;">
+		<h2>Current Wild Shapes</h2>
+		<ul>
+			<li>Brown Bear</li>
+			<li>Dire Wolf</li>
+			<li>Giant Hyena</li>
+			<li>Giant Octopus</li>
+			<li>Giant Spider</li>
+			<li>Giant Toad</li>
+			<li>Lion</li>
+			<li>Tiger</li>
+			<li>Constrictor Snake</li>
+		</ul>
+		</div>
+	</div>
+</div>
+<div style="text-align:center">
+<h2>Zesstra's Diary</h2>
+<ul>
+	<li><a href = "ZesstraDiary/zesstra052318.html">June 23rd, 2018</a></li>
+	<li><a href = "ZesstraDiary/zesstra110218.html">November 2nd, 2018</a></li>
+	<li><a href = "ZesstraDiary/zesstra110918.html">November 9th, 2018</a></li>
+</ul>
+</div>
+</body>
+<script>
+if (localStorage.getItem("level1spellslot") === null){
+		localStorage.setItem("level1spellslot", 0);
+}
+else{
+	document.getElementById("level1spellused").innerHTML = localStorage.getItem("level1spellslot")
+}
+if (localStorage.getItem("level2spellslot") === null){
+		localStorage.setItem("level2spellslot", 0);
+}
+else{
+	document.getElementById("level2spellused").innerHTML = localStorage.getItem("level2spellslot")
+}
+if (localStorage.getItem("level3spellslot") === null){
+	localStorage.setItem("level3spellslot", 0);
+}
+else{
+	document.getElementById("level3spellused").innerHTML = localStorage.getItem("level3spellslot")
+}
+function level1spellminus(){
+	slot = parseInt(localStorage.getItem("level1spellslot"));
+	newSlot = slot - 1
+	document.getElementById("level1spellused").innerHTML = newSlot
+	localStorage.setItem("level1spellslot", newSlot);
+}
+
+function level2spellminus(){
+	slot = parseInt(localStorage.getItem("level2spellslot"));
+	newSlot = slot - 1
+	document.getElementById("level2spellused").innerHTML = newSlot
+	localStorage.setItem("level2spellslot", newSlot);
+}
+
+function level3spellminus(){
+	slot = parseInt(localStorage.getItem("level3spellslot"));
+	newSlot = slot - 1
+	document.getElementById("level3spellused").innerHTML = newSlot
+	localStorage.setItem("level3spellslot", newSlot);
+}
+
+function level1spellplus(){
+	slot = parseInt(localStorage.getItem("level1spellslot"));
+	newSlot = slot + 1
+	document.getElementById("level1spellused").innerHTML = newSlot
+	localStorage.setItem("level1spellslot", newSlot);
+}
+
+function level2spellplus(){
+	slot = parseInt(localStorage.getItem("level2spellslot"));
+	newSlot = slot + 1
+	document.getElementById("level2spellused").innerHTML = newSlot
+	localStorage.setItem("level2spellslot", newSlot);
+}
+
+function level3spellplus(){
+	slot = parseInt(localStorage.getItem("level3spellslot"));
+	newSlot = slot + 1
+	document.getElementById("level3spellused").innerHTML = newSlot
+	localStorage.setItem("level3spellslot", newSlot);
+}
+</script>
+</html> 

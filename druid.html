@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+	<link rel="stylesheet" href="dnd.css">
+</head>
+<body>
+<a href="abbydnd.html">Back to mainpage</a>
+<h1>Druid</h1>
+
+<h2>Druid Spells</h2>
+<div id="showdescription">
+<span id="description"></span>
+<button type="button" onclick="closeShowDescription()">Close</button>
+</div>
+<div style="display:table">
+	<div style="display:table-row">
+		<div style="display:table-cell">
+			<h3>Cantrips (0 Level)</h3>
+			<ul>
+				<li><a onClick="show('druidcraft')" href="#">Druidcraft</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('guidance')" href="#">Guidance</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('mending')" href="#">Mending</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('poisonspray')" href="#">Poison Spray</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('produceflame')" href="#">Produce Flame</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('resistance')" href="#">Resistance</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('shillelagh')" href="#">Shillelagh</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('thornwhip')" href="#">Thorn Whip</a></li>  <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('infestation')" href="#">Infestation</a></li> <!-- Xanathar's Guide to Everything -->
+				<li><a onClick="show('controlflames')" href="#">Control flames</a></li> <!-- Xanathar's Guide to Everything -->
+				<li><a onClick="show('createbonfire')" href="#">Create Bonfire</a></li> <!-- Xanathar's Guide to Everything -->
+				<li><a onClick="show('frostbite')" href="#">Frostbite</a></li> <!-- Xanathar's Guide to Everything -->
+				<li><a onClick="show('gust')" href="#">Gust</a></li> <!-- Xanathar's Guide to Everything -->
+				<li><a onClick="show('magicstone')" href="#">Magic stone</a></li> <!-- Xanathar's Guide to Everything -->
+				<li><a onClick="show('moldearth')" href="#">Mold Earth</a></li> <!-- Xanathar's Guide to Everything -->
+				<li><a onClick="show('primalsavagery')" href="#">Primal Savagery</a></li> <!-- Xanathar's Guide to Everything -->
+				<li><a onClick="show('shapewater')" href="#">Shape Water</a></li> <!-- Xanathar's Guide to Everything -->
+				<li><a onClick="show('thunderclap')" href="#">Thunderclap</a></li> <!-- Xanathar's Guide to Everything -->
+			</ul>
+		</div>
+		<div style="display:table-cell">
+			<h3>1st Level</h3>
+			<ul>
+				<li><a onClick="show('animalfriendship')" href="#">Animal Friendship</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('charmperson')" href="#">Charm Person</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('createordestroywater')" href="#">Create or Destroy Water</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('curewounds')" href="#">Cure Wounds</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('detectmagic')" href="#">Detect Magic</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('detectpoisonanddisease')" href="#">Detect Poison and disease</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('entangle')" href="#">Entangle</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('faeriefire')" href="#">Faerie Fire</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('fogcloud')" href="#">Fog Cloud</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('goodberry')" href="#">Goodberry</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('healingword')" href="#">Healing Word</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('jump')" href="#">Jump</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('longstrider')" href="#">Longstrider</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('purifyfoodanddrink')" href="#">Purify Food and Drink</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('speakwanimals')" href="#">Speak with Animals</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('thunderwave')" href="#">Thunderwave</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('absorbelements')" href="#">Absorb elements</a></li> <!-- Xanathar's Guide to Everything -->
+				<li><a onClick="show('beastbond')" href="#">Beast Bond</a></li> <!-- Xanathar's Guide to Everything -->
+				<li><a onClick="show('earthtremor')" href="#">Earth Tremor</a></li> <!-- Xanathar's Guide to Everything -->
+				<li><a onClick="show('iceknife')" href="#">Ice Knife</a></li> <!-- Xanathar's Guide to Everything -->
+				<li><a onClick="show('snare')" href="#">Snare</a></li> <!-- Xanathar's Guide to Everything -->
+			</ul>
+		</div>
+		<div style="display:table-cell">
+			<h3>2nd Level</h3>
+			<ul>
+				<li><a onClick="show('animalmessenger')" href="#">Animal Messenger</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('barkskin')" href="#">Barkskin</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('beastsense')" href="#">Beast Sense</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('darkvision')" href="#">Darkvision</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('enhanceability')" href="#">Enhance Ability</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('findtraps')" href="#">Find Traps</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('flameblade')" href="#">Flame Blade</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('flamingsphere')" href="#">Flaming Sphere</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('gustofwind')" href="#">Gust of Wind</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('healmetal')" href="#">Heal Metal</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('holdperson')" href="#">Hold Person</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('lesserrestoration')" href="#">Lesser Restoration</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('locateanimalsorplants')" href="#">Locate Animals or Plants</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('locateobject')" href="#">Locate Object</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('moonbeam')" href="#">Moonbeam</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('passwithouttrace')" href="#">Pass without Trace</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('protectionfrompoison')" href="#">Protection from Poison</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('spikegrowth')" href="#">Spike Growth</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('dustdevil')" href="#">Dust devil</a></li> <!-- Xanathar's Guide to Everything -->
+				<li><a onClick="show('earthbind')" href="#">Earthbind</a></li> <!-- Xanathar's Guide to Everything -->
+				<li><a onClick="show('healingspirit')" href="#">Healing spirit</a></li> <!-- Xanathar's Guide to Everything -->
+				<li><a onClick="show('skywrite')" href="#">Skywrite</a></li> <!-- Xanathar's Guide to Everything -->
+				<li><a onClick="show('wardingwind')" href="#">Warding wind</a></li> <!-- Xanathar's Guide to Everything -->
+			</ul>
+		</div>
+		<div style="display:table-cell">
+			<h3>3rd Level</h3>
+			<ul>
+				<li><a onClick="show('calllightning')" href="#">Call Lightning</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('conjureanimals')" href="#">Conjure Animals</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('daylight')" href="#">Daylight</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('dispelmagic')" href="#">Dispel Magic</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('feigndeath')" href="#">Feign Death</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('meldintostone')" href="#">Meld into Stone</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('plantgrowth')" href="#">Plant Growth</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('protectionfromenergy')" href="#">Protection from Energy</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('sleetstorm')" href="#">Sleet Storm</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('speakwithplants')" href="#">Speak with Plants</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('waterbreathing')" href="#">Water Breathing</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('waterwalk')" href="#">Water Walk</a></li> <!-- Player's Handbook 5th edition -->
+				<li><a onClick="show('eruptingearth')" href="#">Erupting earth</a></li> <!-- Xanathar's Guide to Everything -->
+				<li><a onClick="show('flamearrows')" href="#">Flame Arrows</a></li> <!-- Xanathar's Guide to Everything -->
+				<li><a onClick="show('tidalwave')" href="#">Tidal Wave</a></li> <!-- Xanathar's Guide to Everything -->
+				<li><a onClick="show('wallofwater')" href="#">Wall of Water</a></li> <!-- Xanathar's Guide to Everything -->
+			</ul>
+		</div>
+	</div>
+</div>
+<div>
+<h2>Wild Shape</h2>
+<ul>
+	<li>Starting at 2nd level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.</li>
+	<li>You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature</li>
+	<li>You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconcious, drop to 0 hit points, or die.</li>
+</ul>
+</div>
+<div>
+<h2>Circles</h2>
+<h3 id="circleofthemoon">Circle of the Moon</h3>
+<ul>
+	<li>Ability to use Wild Shape on your turn as a bonus action, rather than as an action</li>
+	<li>While transformed by Wild shape, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended.</li>
+	<li>You can use your Wild Shape to transform into a beast with a challenge rating as high as 1 (you ignore the Max. CR column of the Beast Shapes table, but must abide by the other limitations there)</li>
+	<li>Starting at 6th level, you can transform into a beast with a challenge rating as high as your druid level divided by 3, rounded down.</li>
+</ul>
+</div>
+</body>
+<script>
+document.getElementById("showdescription").style.display="none"
+function closeShowDescription(){
+	document.getElementById("showdescription").style.display="none"
+}
+function show(spell){
+	var text;
+	switch(spell){
+		case "infestation":
+			text = "test";
+			break;
+		case "thornwhip":
+			text = "";
+			break;
+		case "shillelagh":
+			text = "";
+			break;
+		case "resistance":
+			text = "";
+			break;
+		case "produceflame":
+			text = "";
+			break;
+		case "poisonspray":
+			text = "";
+			break;
+		case "mending":
+			text = "";
+			break;
+		case "guidance":
+			text = "";
+			break;
+		case "druidcraft":
+			text = "";
+			break;
+		case "animalfriendship":
+			text = "";
+			break;
+		case "charmperson":
+			text = "";
+			break;
+		case "createordestroywater":
+			text = "";
+			break;
+		case "curewounds":
+			text = "";
+			break;
+		case "detectmagic":
+			text = "";
+			break;
+		case "detectpoisonanddisease":
+			text = "";
+			break;
+		case "entangle":
+			text = "";
+			break;
+		case "faeriefire":
+			text = "";
+			break;
+		case "fogcloud":
+			text = "";
+			break;
+		case "goodberry":
+			text = "";
+			break;
+		case "healingword":
+			text = "";
+			break;
+		case "jump":
+			text = "";
+			break;
+		case "longstrider":
+			text = "";
+			break;
+		case "purifyfoodanddrink":
+			text = "";
+			break;
+		case "speakwanimals":
+			text = "";
+			break;
+		case "thunderwave":
+			text = "";
+			break;
+		case "controlflames":
+			text = "";
+			break;
+		case "createbonfire":
+			text = "";
+			break;
+		case "frostbite":
+			text = "";
+			break;
+		case "gust":
+			text = "";
+			break;
+		case "magicstone":
+			text = "";
+			break;
+		case "moldearth":
+			text = "";
+			break;
+		case "thunderclap":
+			text = "";
+			break;
+		case "shapewater":
+			text = "";
+			break;
+		case "primalsavagery":
+			text = "";
+			break;
+		case "absorbelements":
+			text = "";
+			break;
+		case "beastbond":
+			text = "";
+			break;
+		case "earthtremor":
+			text = "";
+			break;
+		case "iceknife":
+			text = "";
+			break;
+		case "snare":
+			text = "";
+			break;
+		case "animalmessenger":
+			text = "";
+			break;
+		case "barkskin":
+			text = "";
+			break;
+		case "beastsense":
+			text = "";
+			break;
+		case "darkvision":
+			text = "";
+			break;
+		case "enhanceability":
+			text = "";
+			break;
+		case "findtraps":
+			text = "";
+			break;
+		case "flameblade":
+			text = "";
+			break;
+		case "flamingsphere":
+			text = "";
+			break;
+		case "gustofwind":
+			text = "";
+			break;
+		case "healmetal":
+			text = "";
+			break;
+		case "holdperson":
+			text = "";
+			break;
+		case "lesserrestoration":
+			text = "";
+			break;
+		case "locateanimalsorplants":
+			text = "";
+			break;
+		case "locateobject":
+			text = "";
+			break;
+		case "moonbeam":
+			text = "";
+			break;
+		case "passwithouttraces":
+			text = "";
+			break;
+		case "protectionfrompoison":
+			text = "";
+			break;
+		case "spikegrowth":
+			text = "";
+			break;
+		case "dustdevil":
+			text = "";
+			break;
+		case "earthbind":
+			text = "";
+			break;
+		case "healingspirit":
+			text = "";
+			break;
+		case "skywrite":
+			text = "";
+			break;
+		case "wardingwind":
+			text = "";
+			break;
+		case "calllightning":
+			text = "";
+			break;
+		case "conjureanimals":
+			text = "";
+			break;
+		case "daylight":
+			text = "";
+			break;
+		case "dispelmagic":
+			text = "";
+			break;
+		case "feigndeath":
+			text = "";
+			break;
+		case "meldintostone":
+			text = "";
+			break;
+		case "plantgrowth":
+			text = "";
+			break;
+		case "protectionfromenergy":
+			text = "";
+			break;
+		case "sleetstorm":
+			text = "";
+			break;
+		case "speakwithplants":
+			text = "";
+			break;
+		case "waterbreathing":
+			text = "";
+			break;
+		case "waterwalk":
+			text = "";
+			break;
+		case "eruptingearth":
+			text = "";
+			break;
+		case "flamearrows":
+			text = "";
+			break;
+		case "tidalwave":
+			text = "";
+			break;
+		case "wallofwater":
+			text = "";
+			break;
+		case "":
+			text = "";
+			break;
+		default:
+			text = "No Description available";
+	}
+	document.getElementById("showdescription").style.display="inline"
+	document.getElementById("description").innerHTML=text
+}
+</script>
+</html> 

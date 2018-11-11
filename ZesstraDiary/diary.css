@@ -1,0 +1,16 @@
+p{
+	margin: 50px;
+	text-indent:50px;
+	letter-spacing: 1px;
+	line-height: 1;
+	word-spacing:1px;
+	font-size:20px;
+}
+
+body{
+	text-align:center;
+	font-family:"Bookman";
+	background-image: url("old-paper.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
